@@ -27,7 +27,7 @@ img {
 .main-header__link {
     color: #333;
 }
-    
+
 /* Estilos del Menu */
 .main-nav {
     opacity: 0;
@@ -196,13 +196,18 @@ img {
 .product:before {
     content: "New";
     background: #FF4E00;
-    padding: 10px;
+    padding: 6px;
     width: 60px;
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 10px;
-    transform: rotate(-90deg);
     color: white;
+}
+.product__mercado {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    position: relative;
 }
 .product__img{
     width: 100%;
@@ -221,6 +226,9 @@ img {
     margin-top: 10px;
 }
 .product:hover .product__icon {
+    color: #FF4E00;
+}
+.product__mercado:hover .product__icon{
     color: #FF4E00;
 }
 .container__testimonios{
@@ -303,6 +311,9 @@ img {
     background: #151515;
     color: white;
     padding: 30px 20px;
+}
+.main-footer__mercado {
+    margin-top: 50px;
 }
 .footer__title{
     border-bottom: 1px dotted #555;
@@ -468,4 +479,49 @@ img {
 .product__img {
     height: 200px;
 }
+}
+
+/* CONTACTO */
+
+.form__contact {
+    width: 450px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    font-family: "inconsolata", monospace;
+}
+.title-mercado__main {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 90px;
+    margin-top: 70px;
+}
+.input-area {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.text-area {
+    min-height: 100px;
+    max-height: 250px;
+    max-width: 100%;
+}
+#boton {
+    background-color: #000000;
+    color: white;
+    padding: 15px;
+}
+#boton:hover {
+    cursor: pointer;
+}
+
+@media (max-width:480px) {
+    .form__contact {
+        width: 100%;
+    }
 }
